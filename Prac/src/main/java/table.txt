@@ -1,0 +1,17 @@
+create table members(
+    id varchar2(20) primary key,
+    pw varchar2(16) not null,
+    name varchar2(10) not null,
+    age number(2),
+    gender char(1)
+);
+
+create table board(
+    bno number(10) primary key,
+    id varchar2(20) references members(id),
+    title varchar2(50) not null,
+    content varchar2(500) not null,
+    regdate date default sysdate
+);
+
+create sequence board_seq nocache;

@@ -7,6 +7,9 @@
 <title>login</title>
 </head>
 <body>
-
+	<h2>로그인</h2>
+	<form >
+		
+	</form>
 </body>
 </html>

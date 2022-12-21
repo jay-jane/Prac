@@ -1,5 +1,8 @@
 package com.prac.user.service;
 
-public interface UserService {
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
+public interface UserService {
+	int join(HttpServletRequest request, HttpServletResponse response);
 }
